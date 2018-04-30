@@ -1,0 +1,17 @@
+{
+  "name": "yebo-bicycle-theme",
+  "version": "1.0.0",
+  "description": "PSD2HTML practice",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all  --parallel watch:sass devserver"
+  },
+  "author": "Monika Dembek",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.2"
+  }
+}
