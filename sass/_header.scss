@@ -1,0 +1,59 @@
+.main-header {
+	width: 100%;
+	height: 100vh;
+	background: url('../img/header-bg.jpg') no-repeat center center;
+	background-size: cover;
+	margin: 0 auto;
+
+	.main-nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 35px 0;
+		width: 100%;
+		transition: all 0.3s;
+
+
+		&__item {
+			font-family: $font-stack;
+			font-weight: bold;
+			font-size: 1.3rem;
+			letter-spacing: 2px;
+			color: $color-grey-dark-2;
+			text-transform: uppercase;
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:nth-child(1)::after,
+			&:nth-child(4)::after {
+				content: ".";
+				margin-left: 40px;
+			} 
+		}
+
+		&__logo {
+			margin: 0 65px;
+		}
+
+		
+	}
+}
+
+//change navigation to fixed on scroll
+
+.fixed .main-nav {
+	position: fixed;
+	padding: 15px;
+	background-color: $color-white;
+}
+
+.fixed .main-nav__logo {
+	transform: scale(0.85);
+}
+
+
+
+
