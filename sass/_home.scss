@@ -121,3 +121,47 @@
 	}
 }
 
+
+//COMMENTS SECTION
+.comments-section {
+	grid-column: 1 / -1;
+	background-color: $color-grey-light;
+	text-align: center;
+	padding: 100px 0 70px;
+
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.comments {
+	grid-column: 2 / 6;
+
+	&__content {
+		font-style: italic;
+		font-size: 2.4rem;
+		color: $color-grey;
+		margin-bottom: 100px;
+	}
+
+	&__control {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $color-white;
+		border: 1px solid $color-grey;
+		margin-right: 5px;
+		cursor: pointer;
+	}
+
+	&__control.active {
+		background-color: $color-grey;
+		border: 1px solid $color-grey;
+	}
+}
+
+
+
+.icon-twitter {
+	fill: #00aced;
+}

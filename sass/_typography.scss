@@ -7,6 +7,19 @@
 	text-transform: uppercase;
 }
 
+.heading-2 {
+	font-family: $font-stack;
+	font-weight: 400;
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	color: $color-grey-dark-1;
+
+	span {
+		color: $color-grey;
+	}
+}
+
+
 .margin-bot-medium {
 	margin-bottom: 35px;
 }
