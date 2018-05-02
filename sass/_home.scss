@@ -315,3 +315,41 @@
 	}
 }
 
+
+//CONTACT SECTION
+.contact-section {
+	grid-column: 3 / span 2;
+	padding: 110px 0;
+	text-align: center;
+}
+
+.contact-form {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	grid-gap: 10px;
+
+	&__input {
+		padding-left: 3rem;
+		font-family: $font-stack;
+		font-style: italic;
+		font-size: 2rem;
+		color: $color-grey-dark-2;
+		border: 1px solid rgba($color-grey, 0.5);
+
+		&::placeholder {
+			color: $color-grey-dark-2;
+			opacity: 0.4;
+		}
+		
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    		color: $color-grey-dark-2;
+			opacity: 0.4;
+		}
+
+		&::-ms-input-placeholder { /* Microsoft Edge */
+		    color: $color-grey-dark-2;
+			opacity: 0.4;
+		}
+
+	}
+}
