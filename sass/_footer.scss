@@ -1,0 +1,29 @@
+.main-footer {
+	grid-column: 1 / -1;
+	padding: 100px 0;
+	background-color: $color-grey-light;
+
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+
+	&__content {
+		grid-column: 2 / -2;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__contact {
+		font-style: italic;
+		strong {
+			font-style: normal;
+		}
+	}
+
+	&__copyright {
+		display: flex;
+		img {
+			margin-left: 10px;
+		}
+	}
+}

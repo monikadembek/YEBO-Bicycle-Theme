@@ -23,6 +23,9 @@ ul {
 a {
   text-decoration: none; }
 
+strong {
+  font-weight: bold; }
+
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr); }
@@ -40,11 +43,45 @@ a {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s; }
   .btn:hover {
     background-color: #42a780; }
+
+.btn-round {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 50%;
+  margin: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-round svg {
+    fill: #ffffff;
+    width: 24px;
+    height: 24px; }
+
+.btn-twitter {
+  background-color: #00aced;
+  transition: background-color 0.3s; }
+  .btn-twitter:hover {
+    background-color: #0087ba; }
+
+.btn-facebook {
+  background-color: #3b5998;
+  transition: background-color 0.3s; }
+  .btn-facebook:hover {
+    background-color: #2d4373; }
+
+.btn-pinterest {
+  background-color: #cb2027;
+  transition: background-color 0.3s; }
+  .btn-pinterest:hover {
+    background-color: #9f191f; }
 
 .heading-1 {
   font-family: "Lato", sans-serif;
@@ -348,3 +385,23 @@ a {
       /* Microsoft Edge */
       color: #4d4959;
       opacity: 0.4; }
+
+.main-footer {
+  grid-column: 1 / -1;
+  padding: 100px 0;
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+  .main-footer__content {
+    grid-column: 2 / -2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .main-footer__contact {
+    font-style: italic; }
+    .main-footer__contact strong {
+      font-style: normal; }
+  .main-footer__copyright {
+    display: flex; }
+    .main-footer__copyright img {
+      margin-left: 10px; }
