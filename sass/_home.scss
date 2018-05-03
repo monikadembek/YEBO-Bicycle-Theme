@@ -350,6 +350,11 @@
 	@media only screen and (max-width: $bp-large) {
 		grid-column: 2 / span 4;
 	}
+
+	@media only screen and (max-width: $bp-small) {
+		grid-column: 1 / -1;
+		padding 11rem 3rem;
+	}
 }
 
 .contact-form {
