@@ -1,16 +1,25 @@
 .main-footer {
 	grid-column: 1 / -1;
-	padding: 100px 0;
+	padding: 10rem 0;
 	background-color: $color-grey-light;
 
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 
+	@media only screen and (max-width: $bp-medium) {
+		padding: 5rem 3rem;
+	}
+
 	&__content {
 		grid-column: 2 / -2;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+
+		@media only screen and (max-width: $bp-medium) {
+			grid-column: 1 / -1;
+		}
 	}
 
 	&__contact {
@@ -24,6 +33,11 @@
 		display: flex;
 		img {
 			margin-left: 10px;
+		}
+
+		@media only screen and (max-width: $bp-small) {
+			flex-direction: column;
+			justify-content: center;
 		}
 	}
 }

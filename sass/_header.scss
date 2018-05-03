@@ -9,9 +9,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 35px 0;
+		padding: 3.5rem 0;
 		width: 100%;
 		transition: all 0.3s;
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 2rem 0;
+		}
 
 
 		&__item {
@@ -21,7 +25,8 @@
 			letter-spacing: 2px;
 			color: $color-grey-dark-2;
 			text-transform: uppercase;
-			margin-right: 40px;
+			margin-right: 4rem;
+			transition: all 0.3s;
 
 			&:last-child {
 				margin-right: 0;
@@ -30,12 +35,42 @@
 			&:nth-child(1)::after,
 			&:nth-child(4)::after {
 				content: ".";
-				margin-left: 40px;
+				margin-left: 4rem;
+
+				@media only screen and (max-width: $bp-medium) {
+					margin-left: 2rem;
+				}
+
+				@media only screen and (max-width: $bp-small) {
+					margin-left: 1.5rem;
+				}
+
 			} 
+
+			&:hover {
+				color: $color-primary;
+			}
+
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 1.5rem;
+				margin-right: 2rem;
+			}
+
+			@media only screen and (max-width: $bp-small) {
+				margin-right: 1.5rem;
+			}
 		}
 
 		&__logo {
-			margin: 0 65px;
+			margin: 0 6.5rem;
+
+			@media only screen and (max-width: $bp-medium) {
+				margin: 0 4.5rem;
+			}
+
+			@media only screen and (max-width: $bp-small) {
+				margin: 0 2rem;
+			}
 		}
 
 		

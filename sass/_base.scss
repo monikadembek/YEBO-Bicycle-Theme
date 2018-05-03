@@ -16,10 +16,14 @@ $color-grey: #848789;
 $color-grey-light: #f7f7f7;
 
 
-
 //RESPONSIVE BREAKPOINTS
+$bp-largest: 68.75em;  //1100px : 16px
+$bp-large: 62.5em;  //1000px : 16px
+$bp-medium: 50em; //800px : 16px
+$bp-small: 37.5em; //600px : 16px
 
 
+//BASE STYLES
 
 *,
 *::before,
@@ -31,7 +35,11 @@ $color-grey-light: #f7f7f7;
 
 html {
 	box-sizing: border-box;
-	font-size: 62.5%; //10px / 16px => 62,5% => 1rem = 10px
+	font-size: 62.5%; //10px : 16px => 62,5% => 1rem = 10px
+
+	@media only screen and (max-width: $bp-large) {
+		font-size: 50%;
+	}
 }
 
 body {
@@ -93,8 +101,8 @@ strong {
 }
 
 .btn-round {
-	width: 3.6rem;
-	height: 3.6rem;
+	width: 36px;
+	height: 36px;
 	display: inline-block;
 	color: #ffffff;
 	border-radius: 50%;
