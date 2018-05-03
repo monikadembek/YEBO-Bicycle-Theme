@@ -58,6 +58,7 @@
 
 			@media only screen and (max-width: $bp-small) {
 				margin-right: 1.5rem;
+				font-size: 1.3rem;
 			}
 		}
 
@@ -69,7 +70,8 @@
 			}
 
 			@media only screen and (max-width: $bp-small) {
-				margin: 0 2rem;
+				margin: 0 1rem;
+				transform: scale(0.8);
 			}
 		}
 

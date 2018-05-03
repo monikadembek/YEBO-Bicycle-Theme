@@ -99,10 +99,6 @@
 		background-color: $color-white;
 		position: relative;
 
-		@media only screen and (max-width: $bp-small) {
-			padding: 4rem;
-		}
-
 		p {
 			text-align: justify;
 		}	
@@ -128,6 +124,10 @@
 			border-right: 2rem solid transparent;
 			border-top: 2rem solid $color-white;
 		}	
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 4rem;
+		}
 	}
 
 	
@@ -154,7 +154,13 @@
 			grid-column: 1 / span 3;
 		}
 	}
+
+	@media only screen and (max-width: $bp-smallest) {
+			display: block;
+	}
 }
+
+
 
 
 //COMMENTS SECTION

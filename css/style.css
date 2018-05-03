@@ -152,7 +152,8 @@ strong {
           margin-right: 2rem; } }
       @media only screen and (max-width: 37.5em) {
         .main-header .main-nav__item {
-          margin-right: 1.5rem; } }
+          margin-right: 1.5rem;
+          font-size: 1.3rem; } }
     .main-header .main-nav__logo {
       margin: 0 6.5rem; }
       @media only screen and (max-width: 50em) {
@@ -160,7 +161,8 @@ strong {
           margin: 0 4.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .main-header .main-nav__logo {
-          margin: 0 2rem; } }
+          margin: 0 1rem;
+          transform: scale(0.8); } }
 
 .fixed .main-nav {
   position: fixed;
@@ -242,9 +244,6 @@ strong {
     font-size: 1.6rem;
     background-color: #ffffff;
     position: relative; }
-    @media only screen and (max-width: 37.5em) {
-      .work .content-box {
-        padding: 4rem; } }
     .work .content-box p {
       text-align: justify; }
     .work .content-box p::after {
@@ -265,6 +264,9 @@ strong {
       border-left: 2rem solid transparent;
       border-right: 2rem solid transparent;
       border-top: 2rem solid #ffffff; }
+    @media only screen and (max-width: 37.5em) {
+      .work .content-box {
+        padding: 4rem; } }
   .work .content-box--1 {
     grid-column: 5 / span 2;
     grid-row: 1 / span 2; }
@@ -283,6 +285,9 @@ strong {
     @media only screen and (max-width: 68.75em) {
       .work .content-box--3 {
         grid-column: 1 / span 3; } }
+  @media only screen and (max-width: 31.25em) {
+    .work {
+      display: block; } }
 
 .comments-section {
   grid-column: 1 / -1;
@@ -448,9 +453,6 @@ strong {
   background-color: #f7f7f7;
   display: grid;
   grid-template-columns: repeat(6, 1fr); }
-  @media only screen and (max-width: 50em) {
-    .main-footer {
-      padding: 5rem 3rem; } }
   .main-footer__content {
     grid-column: 2 / -2;
     display: flex;
@@ -460,6 +462,12 @@ strong {
     @media only screen and (max-width: 50em) {
       .main-footer__content {
         grid-column: 1 / -1; } }
+    @media only screen and (max-width: 37.5em) {
+      .main-footer__content > * {
+        display: block;
+        width: 100%;
+        margin-bottom: 4rem;
+        text-align: center; } }
   .main-footer__contact {
     font-style: italic; }
     .main-footer__contact strong {
@@ -468,7 +476,12 @@ strong {
     display: flex; }
     .main-footer__copyright img {
       margin-left: 10px; }
+      @media only screen and (max-width: 37.5em) {
+        .main-footer__copyright img {
+          width: 53px; } }
     @media only screen and (max-width: 37.5em) {
       .main-footer__copyright {
-        flex-direction: column;
         justify-content: center; } }
+  @media only screen and (max-width: 50em) {
+    .main-footer {
+      padding: 5rem 3rem; } }
