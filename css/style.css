@@ -235,12 +235,13 @@ strong {
     .main-nav-mobile {
       display: flex; } }
 
-.fixed .main-nav {
+.fixed-nav .main-nav {
   position: fixed;
-  padding: 15px;
-  background-color: #ffffff; }
+  padding: 10px;
+  background-color: #ffffff;
+  z-index: 40; }
 
-.fixed .main-nav__logo {
+.fixed-nav .main-nav__logo {
   transform: scale(0.85); }
 
 .about {
