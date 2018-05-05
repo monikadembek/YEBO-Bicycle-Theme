@@ -11,10 +11,17 @@
 
 	&__content {
 		grid-column: 2 / 6;	
+		@media only screen and (max-width: $bp-small) {
+			grid-column: 1 / -1; 
+		}		
 	}
 
 	.icon {
 		margin-bottom: 30px;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		padding: 10rem 4rem; 
 	}
 }
 

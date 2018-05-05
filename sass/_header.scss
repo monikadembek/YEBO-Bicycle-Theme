@@ -13,10 +13,6 @@
 		width: 100%;
 		transition: all 0.3s;
 
-		@media only screen and (max-width: $bp-small) {
-			padding: 2rem 0;
-		}
-
 
 		&__item {
 			font-family: $font-stack;
@@ -75,9 +71,108 @@
 			}
 		}
 
+	
+		@media only screen and (max-width: $bp-small) {
+			padding: 2rem 0;
+		}
+
+		//hides standard nav on smallest screens
+		@media only screen and (max-width: $bp-smallest) {
+			display: none;
+		} 
 		
 	}
 }
+
+
+//mobile navigation
+.main-nav-mobile {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 4rem; 
+	
+	.btn-mobile-menu {
+		display: block;
+		background: rgba(#ffffff, 0.5);
+		width: 40px;
+		height: 40px;
+		border: 2px solid $color-primary;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 4rem;
+		right: 4rem;
+		z-index: 30;
+	}
+
+	.btn-mobile-menu__line {
+		display: block;
+		width: 25px;
+		height: 2px;
+		background: $color-grey-dark-1; 
+		position: relative;
+	}
+
+	.btn-mobile-menu__line::before,
+	.btn-mobile-menu__line::after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 25px;
+		height: 2px;
+		background: $color-grey-dark-1;
+		
+	}
+
+	.btn-mobile-menu__line::before {
+		top: -8px;
+	}
+
+	.btn-mobile-menu__line::after {
+		top: 8px;
+	}	
+
+	&__menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: $color-primary;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		z-index: 25;		
+	}
+
+	&__menu.open {
+		display: flex;	
+	}
+
+	&__menu-item {
+		color: $color-white;		
+		text-transform: uppercase;
+		margin: 1.5rem 2rem;
+		font-size: 2.5rem;
+		transform: scale(0);
+		transition: all 0.4s;
+	}
+
+	.open &__menu-item {
+		transform: scale(1);
+	}
+
+	//shows mobile nav on smallest screens
+	@media only screen and (max-width: $bp-smallest) {
+		display: flex;
+	}
+}
+
 
 //change navigation to fixed on scroll
 
