@@ -111,6 +111,20 @@ strong {
   font-size: 2.4rem;
   color: #848789; }
 
+.heading-info {
+  display: block;
+  text-align: left;
+  margin-top: 3rem;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 300; }
+
+.heading-info--good {
+  color: #64c29e; }
+
+.heading-info--error {
+  color: red; }
+
 .main-header {
   width: 100%;
   height: 100vh;

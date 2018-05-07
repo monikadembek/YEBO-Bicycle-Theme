@@ -25,5 +25,21 @@
 	color: $color-grey;
 }
 
+.heading-info {
+	display: block;
+	text-align: left;
+	margin-top: 3rem;
+	font-style: italic;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.heading-info--good {
+	color: $color-primary;	
+}
+
+.heading-info--error {
+	color: red;	
+}
 
 
