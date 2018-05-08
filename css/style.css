@@ -391,6 +391,12 @@ strong {
 
 .comments {
   grid-column: 2 / 6; }
+  .comments__element {
+    opacity: 0;
+    transition: all 0.3s; }
+  .comments__element.active {
+    display: block;
+    opacity: 1; }
   .comments__content {
     font-style: italic;
     font-size: 2.4rem;
