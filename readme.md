@@ -1,4 +1,4 @@
-YEBO - Bicycle Theme - free psd layout
+<h2>YEBO - Bicycle Theme - free psd layout</h2>
 PSD2HTML practice<br>
 CSS grid layout<br>
 Includes javascript scripts responsible for:<br>
